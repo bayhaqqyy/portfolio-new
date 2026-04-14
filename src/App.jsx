@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Cursor from './components/Cursor';
 import About from './components/About';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
@@ -12,6 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
+      <Cursor />
       <Navbar />
 
       <main className="relative">

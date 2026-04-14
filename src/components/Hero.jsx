@@ -1,7 +1,18 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const roles = ['System Engineer', 'Platform Engineer', 'DevOps Engineer'];
 
 const Hero = () => {
+  const [roleIndex, setRoleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRoleIndex((prev) => (prev + 1) % roles.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 px-8 overflow-hidden">
       <div className="absolute -top-24 left-1/4 w-96 h-96 bg-primary/10 blur-[120px] rounded-full"></div>
@@ -36,7 +47,20 @@ const Hero = () => {
         className="font-label text-lg md:text-2xl text-primary mb-12 h-8 flex items-center gap-2"
       >
         <span className="material-symbols-outlined text-cyan-400">terminal</span>
-        <span>System Engineer</span>
+        <div className="relative flex items-center h-full min-w-[180px] sm:min-w-[220px]">
+          <AnimatePresence mode="popLayout">
+            <motion.span
+              key={roleIndex}
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -30, opacity: 0 }}
+              transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+              className="absolute left-0 whitespace-nowrap"
+            >
+              {roles[roleIndex]}
+            </motion.span>
+          </AnimatePresence>
+        </div>
         <span className="w-3 h-8 bg-cyan-400 animate-pulse"></span>
       </motion.div>
       <motion.div 
