@@ -12,15 +12,71 @@ const Training = () => {
           <div className="space-y-4">
             <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
               <div>
-                <h5 className="font-headline font-bold text-sm">Advanced RH OpenShift Ops</h5>
-                <p className="text-xs text-slate-500 font-label">Red Hat | 2023</p>
+                <h5 className="font-headline font-bold text-sm">Linux System Administration</h5>
+                <p className="text-xs text-slate-500 font-label">IDNetworkers | 2024</p>
               </div>
               <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">check_circle</span>
             </div>
             <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
               <div>
-                <h5 className="font-headline font-bold text-sm">DevOps Engineering Bootcamp</h5>
-                <p className="text-xs text-slate-500 font-label">CloudNative Found. | 2022</p>
+                <h5 className="font-headline font-bold text-sm">DevOps</h5>
+                <p className="text-xs text-slate-500 font-label">IDNetworkers | 2024</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">check_circle</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">Proxmox Administration</h5>
+                <p className="text-xs text-slate-500 font-label">IDNetworkers | 2024</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">check_circle</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">F5</h5>
+                <p className="text-xs text-slate-500 font-label">IDNetworkers | 2024</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">check_circle</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">Windows Server</h5>
+                <p className="text-xs text-slate-500 font-label">IDNetworkers | 2024</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">check_circle</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">Kubernetes Administration</h5>
+                <p className="text-xs text-slate-500 font-label">IDNetworkers | 2025</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">check_circle</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">VMWare</h5>
+                <p className="text-xs text-slate-500 font-label">IDNetworkers | 2025</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">check_circle</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">Azure Administration</h5>
+                <p className="text-xs text-slate-500 font-label">IDNetworkers | 2025</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">check_circle</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">AWS Cloud Admin</h5>
+                <p className="text-xs text-slate-500 font-label">IDNetworkers | 2025</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">check_circle</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">CCNA</h5>
+                <p className="text-xs text-slate-500 font-label">IDNetworkers | 2025</p>
               </div>
               <span className="material-symbols-outlined text-slate-600 group-hover:text-primary transition-colors">check_circle</span>
             </div>
@@ -34,15 +90,36 @@ const Training = () => {
           <div className="space-y-4">
             <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
               <div>
-                <h5 className="font-headline font-bold text-sm">Linux Essentials for Devs</h5>
-                <p className="text-xs text-slate-500 font-label">Corporate In-house | 24 Participants</p>
+                <h5 className="font-headline font-bold text-sm">Linux System Administration</h5>
+                <p className="text-xs text-slate-500 font-label">Training Center | 5 Participants</p>
               </div>
               <span className="material-symbols-outlined text-slate-600 group-hover:text-secondary transition-colors">groups</span>
             </div>
             <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
               <div>
-                <h5 className="font-headline font-bold text-sm">Intro to Containerization</h5>
-                <p className="text-xs text-slate-500 font-label">Local Tech Community | 50+ Participants</p>
+                <h5 className="font-headline font-bold text-sm">DevOps</h5>
+                <p className="text-xs text-slate-500 font-label">Training Center | 6 Participants</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-secondary transition-colors">groups</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">Belajar Linux Dari 0</h5>
+                <p className="text-xs text-slate-500 font-label">Training Center | 30 Participants</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-secondary transition-colors">groups</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">Bootcamp System Administration</h5>
+                <p className="text-xs text-slate-500 font-label">Online Bootcamp | 30+ Participants</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-600 group-hover:text-secondary transition-colors">groups</span>
+            </div>
+            <div className="p-6 bg-surface-container rounded-2xl border border-outline-variant/15 flex justify-between items-center group hover:bg-surface-container-high transition-all">
+              <div>
+                <h5 className="font-headline font-bold text-sm">IDN Goes to School</h5>
+                <p className="text-xs text-slate-500 font-label">School Visit Program | 100+ Participants</p>
               </div>
               <span className="material-symbols-outlined text-slate-600 group-hover:text-secondary transition-colors">groups</span>
             </div>

@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-        <div className="text-xl font-black tracking-tighter text-cyan-400 font-headline">SYS_ENGINEER_PORTFOLIO</div>
+        <div className="text-xl font-black tracking-tighter text-cyan-400 font-headline">Hello World</div>
         <div className="hidden md:flex gap-8 items-center">
           <a className="text-slate-400 font-medium hover:text-cyan-300 transition-colors duration-300 font-label text-sm uppercase tracking-wider" href="#about">About</a>
           <a className="text-slate-400 font-medium hover:text-cyan-300 transition-colors duration-300 font-label text-sm uppercase tracking-wider" href="#skills">Skills</a>

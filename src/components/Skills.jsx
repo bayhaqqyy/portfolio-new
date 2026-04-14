@@ -31,7 +31,7 @@ const Skills = () => {
         <div className="bg-surface-container-high p-6 rounded-3xl border border-outline-variant/10 hover:-translate-y-2 hover:shadow-xl hover:border-secondary/30 transition-all duration-300 cursor-default">
           <span className="material-symbols-outlined text-secondary text-2xl mb-4">router</span>
           <h4 className="font-headline font-bold mb-2">Network</h4>
-          <p className="text-xs text-on-surface-variant font-label">SDN, VLAN, Load Balancing, Firewall Policy</p>
+          <p className="text-xs text-on-surface-variant font-label">VLAN, Load Balancing, Firewall Policy</p>
         </div>
         {/* Automation Card */}
         <div className="bg-surface-container-high p-6 rounded-3xl border border-outline-variant/10 hover:-translate-y-2 hover:shadow-xl hover:border-cyan-400/30 transition-all duration-300 cursor-default">

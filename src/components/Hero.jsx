@@ -42,7 +42,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full animate-pulse blur-md opacity-50 group-hover:opacity-100 transition-opacity"></div>
         <div className="relative w-48 h-48 rounded-full p-1 bg-gradient-to-tr from-cyan-400 to-violet-500 overflow-hidden shadow-2xl">
           <img 
-            alt="RAFLI ABDUL BAY HAQQY" 
+            alt="Rafli Abdul Bay Haqqy" 
             className="w-full h-full object-cover rounded-full bg-surface" 
             src="/my-avatar.jpg" 
           />
@@ -54,7 +54,7 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="font-headline text-5xl md:text-8xl font-black tracking-tighter text-center mb-4"
       >
-        <span className="bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent">RAFLI ABDUL BAY HAQQY</span>
+        <span className="bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent">Rafli Abdul Bay Haqqy</span>
       </motion.h1>
       <motion.div 
         initial={{ y: 20, opacity: 0 }}
