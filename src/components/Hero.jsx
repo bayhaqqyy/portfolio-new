@@ -78,10 +78,10 @@ const Hero = () => {
           <span>Lihat Sertifikasi</span>
           <span className="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1">arrow_forward</span>
         </button>
-        <button className="px-8 py-4 bg-transparent border border-outline-variant rounded-xl font-headline font-bold text-on-surface flex items-center gap-3 hover:bg-surface-container-low transition-all active:scale-95">
+        <a href="/resume.pdf" download="Resume_Rafli_Abdul_Bayhaqqy.pdf" className="px-8 py-4 bg-transparent border border-outline-variant rounded-xl font-headline font-bold text-on-surface flex items-center gap-3 hover:bg-surface-container-low transition-all active:scale-95">
           <span className="material-symbols-outlined text-xl">download</span>
           <span>Download Resume</span>
-        </button>
+        </a>
       </motion.div>
     </section>
   );
