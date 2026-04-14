@@ -9,9 +9,9 @@ const Footer = () => {
           <div className="text-cyan-400 font-label text-xs">SYSTEM ENGINEER</div>
         </div>
         <div className="flex gap-8 mb-6 md:mb-0">
-          <a className="text-slate-500 hover:text-cyan-400 transition-all font-label text-sm uppercase tracking-widest" href="#">LinkedIn</a>
-          <a className="text-slate-500 hover:text-cyan-400 transition-all font-label text-sm uppercase tracking-widest" href="#">GitHub</a>
-          <a className="text-slate-500 hover:text-cyan-400 transition-all font-label text-sm uppercase tracking-widest" href="#">Twitter</a>
+          <a className="text-slate-500 hover:text-cyan-400 transition-all font-label text-sm uppercase tracking-widest" href="https://linkedin.com/in/rafli" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a className="text-slate-500 hover:text-cyan-400 transition-all font-label text-sm uppercase tracking-widest" href="https://github.com/rafli" target="_blank" rel="noreferrer">GitHub</a>
+          <a className="text-slate-500 hover:text-cyan-400 transition-all font-label text-sm uppercase tracking-widest" href="mailto:hi@rafli.dev">Email</a>
         </div>
         <div className="text-slate-500 font-label text-xs">
           © 2024 System Engineer. All rights reserved.
