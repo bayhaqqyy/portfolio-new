@@ -20,7 +20,7 @@ const Contact = () => {
               </div>
               <div>
                 <div className="text-xs font-label text-slate-500">EMAIL ME</div>
-                <div className="font-headline font-bold">hi@rafli.dev</div>
+                <div className="font-headline font-bold">rafliabdulbayhaqqy@gmail.com</div>
               </div>
             </a>
             <div className="flex items-center gap-4 group">

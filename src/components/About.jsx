@@ -21,7 +21,7 @@ const About = () => {
           </p>
           <div className="grid grid-cols-3 gap-4">
             <div className="text-center p-4 bg-surface-container-highest rounded-2xl">
-              <div className="font-headline text-3xl font-black text-cyan-400">5+</div>
+              <div className="font-headline text-3xl font-black text-cyan-400">2+</div>
               <div className="font-label text-[10px] uppercase tracking-tighter text-slate-400">Years Exp</div>
             </div>
             <div className="text-center p-4 bg-surface-container-highest rounded-2xl">
@@ -29,7 +29,7 @@ const About = () => {
               <div className="font-label text-[10px] uppercase tracking-tighter text-slate-400">Certs</div>
             </div>
             <div className="text-center p-4 bg-surface-container-highest rounded-2xl">
-              <div className="font-headline text-3xl font-black text-cyan-400">4+</div>
+              <div className="font-headline text-3xl font-black text-cyan-400">7+</div>
               <div className="font-label text-[10px] uppercase tracking-tighter text-slate-400">Training</div>
             </div>
           </div>

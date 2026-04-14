@@ -5,13 +5,29 @@ const roles = ['System Engineer', 'Platform Engineer', 'DevOps Engineer'];
 
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
+  const [text, setText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setRoleIndex((prev) => (prev + 1) % roles.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+    let timer;
+    const currentRole = roles[roleIndex];
+    
+    if (isDeleting) {
+      if (text === '') {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      } else {
+        timer = setTimeout(() => setText(currentRole.substring(0, text.length - 1)), 50);
+      }
+    } else {
+      if (text === currentRole) {
+        timer = setTimeout(() => setIsDeleting(true), 2000);
+      } else {
+        timer = setTimeout(() => setText(currentRole.substring(0, text.length + 1)), 100);
+      }
+    }
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, roleIndex]);
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 px-8 overflow-hidden">
@@ -47,19 +63,8 @@ const Hero = () => {
         className="font-label text-lg md:text-2xl text-primary mb-12 h-8 flex items-center gap-2"
       >
         <span className="material-symbols-outlined text-cyan-400">terminal</span>
-        <div className="relative flex items-center h-full min-w-[180px] sm:min-w-[220px]">
-          <AnimatePresence mode="popLayout">
-            <motion.span
-              key={roleIndex}
-              initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -30, opacity: 0 }}
-              transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
-              className="absolute left-0 whitespace-nowrap"
-            >
-              {roles[roleIndex]}
-            </motion.span>
-          </AnimatePresence>
+        <div className="relative flex items-center h-full">
+          <span>{text}</span>
         </div>
         <span className="w-3 h-8 bg-cyan-400 animate-pulse"></span>
       </motion.div>
