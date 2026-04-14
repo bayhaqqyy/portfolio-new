@@ -54,12 +54,12 @@ const About = () => {
           <div className="p-6 text-cyan-400/90 leading-relaxed">
             <div className="mb-2"><span className="text-violet-400">status:</span> <span className="text-primary">"active_learning"</span></div>
             <div className="mb-2"><span className="text-violet-400">focus_areas:</span></div>
-            <div className="pl-4 mb-1">- <span className="text-on-surface">OpenStack (Zed Release)</span></div>
+            <div className="pl-4 mb-1">- <span className="text-on-surface">Openshift</span></div>
             <div className="pl-8 text-slate-500">progress: [████████░░] 80%</div>
-            <div className="pl-4 mb-1">- <span className="text-on-surface">Ceph Storage Clusters</span></div>
+            <div className="pl-4 mb-1">- <span className="text-on-surface">Ansible</span></div>
             <div className="pl-8 text-slate-500">progress: [██████░░░░] 65%</div>
             <div className="pl-4 mb-1">- <span className="text-on-surface">GitOps with ArgoCD</span></div>
-            <div className="pl-8 text-slate-500">progress: [██████████] 100%</div>
+            <div className="pl-8 text-slate-500">progress: [███████░░░] 70%</div>
             <div className="mt-4 flex items-center">
               <span className="text-primary mr-2">➜</span>
               <span className="animate-pulse">_</span>
