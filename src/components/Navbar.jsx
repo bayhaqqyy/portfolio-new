@@ -11,7 +11,7 @@ const Navbar = () => {
           <a className="text-slate-400 font-medium hover:text-cyan-300 transition-colors duration-300 font-label text-sm uppercase tracking-wider" href="#certs">Certifications</a>
           <a className="text-slate-400 font-medium hover:text-cyan-300 transition-colors duration-300 font-label text-sm uppercase tracking-wider" href="#experience">Experience</a>
           <a className="text-slate-400 font-medium hover:text-cyan-300 transition-colors duration-300 font-label text-sm uppercase tracking-wider" href="#contact">Contact</a>
-          <button className="bg-primary-container text-on-primary-container px-6 py-2 rounded-xl font-headline font-bold text-sm hover:scale-95 duration-200 ease-in-out transition-all">Resume</button>
+          <a href="/resume.pdf" download="Resume_Rafli_Abdul_Bayhaqqy.pdf" className="bg-primary-container text-on-primary-container px-6 py-2 rounded-xl font-headline font-bold text-sm hover:scale-95 duration-200 ease-in-out transition-all flex items-center justify-center">Resume</a>
         </div>
         <button className="md:hidden text-cyan-400">
           <span className="material-symbols-outlined">menu</span>
