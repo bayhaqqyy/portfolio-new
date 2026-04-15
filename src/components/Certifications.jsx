@@ -40,7 +40,7 @@ const certsData = [
     title: 'RHCSA',
     subtitle: 'Red Hat Certified System Administrator',
     category: 'Linux',
-    imgSrc: 'https://images.credly.com/size/340x340/images/3070cd59-4ac7-4ebc-bee9-01bed54522cc/Red_Hat_Certified_System_Administrator__RHCSA_.png',
+    imgSrc: 'https://images.credly.com/size/680x680/images/572de0ba-2c59-4816-a59d-b0e1687e45ee/image.png',
     hoverBorder: 'hover:border-primary/50',
     hoverBg: 'hover:bg-primary hover:text-on-primary',
     bgOverlay: 'bg-primary/5',
