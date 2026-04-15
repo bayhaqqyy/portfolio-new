@@ -47,6 +47,17 @@ const certsData = [
     link: 'https://www.credly.com/'
   },
   {
+    id: 'rhcsa',
+    title: 'RHCSC',
+    subtitle: 'Red Hat Certified Specialist in Containers',
+    category: 'Linux',
+    imgSrc: '/rhcsa.png',
+    hoverBorder: 'hover:border-primary/50',
+    hoverBg: 'hover:bg-primary hover:text-on-primary',
+    bgOverlay: 'bg-primary/5',
+    link: 'https://www.credly.com/'
+  },
+  {
     id: 'alibaba',
     title: 'ACA',
     subtitle: 'Alibaba Cloud Certified Associate Database',
