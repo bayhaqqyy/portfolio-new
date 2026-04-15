@@ -111,7 +111,7 @@ const Certifications = () => {
               transition={{ duration: 0.3 }}
               className={`bg-surface-container p-6 rounded-3xl border border-outline-variant/20 transition-all group ${cert.hoverBorder}`}
             >
-              <div className="h-40 mb-6 bg-slate-900 rounded-2xl flex items-center justify-center overflow-hidden relative p-5">
+              <div className="h-40 mb-6 bg-slate-900 rounded-2xl flex items-center justify-center overflow-hidden relative p-2">
                 <img alt={cert.title} className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500" src={cert.imgSrc} />
                 <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity ${cert.bgOverlay}`}></div>
               </div>
