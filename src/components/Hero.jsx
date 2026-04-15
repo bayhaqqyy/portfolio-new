@@ -74,10 +74,10 @@ const Hero = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="flex flex-col md:flex-row gap-6"
       >
-        <button className="group relative px-8 py-4 bg-gradient-to-br from-primary to-primary-container rounded-xl font-headline font-bold text-on-primary-container flex items-center gap-3 overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(70,241,197,0.2)]">
+        <a href="#certs" className="group relative px-8 py-4 bg-gradient-to-br from-primary to-primary-container rounded-xl font-headline font-bold text-on-primary-container flex items-center gap-3 overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(70,241,197,0.2)]">
           <span>Lihat Sertifikasi</span>
           <span className="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1">arrow_forward</span>
-        </button>
+        </a>
         <a href="/resume.pdf" download="Resume_Rafli_Abdul_Bayhaqqy.pdf" className="px-8 py-4 bg-transparent border border-outline-variant rounded-xl font-headline font-bold text-on-surface flex items-center gap-3 hover:bg-surface-container-low transition-all active:scale-95">
           <span className="material-symbols-outlined text-xl">download</span>
           <span>Download Resume</span>

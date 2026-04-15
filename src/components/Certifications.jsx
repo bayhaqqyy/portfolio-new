@@ -51,11 +51,11 @@ const certsData = [
     title: 'RHCSC',
     subtitle: 'Red Hat Certified Specialist in Containers',
     category: 'Linux',
-    imgSrc: '/rhcsa.png',
+    imgSrc: 'https://images.credly.com/size/220x220/images/272f17b3-2eb9-4e5f-aa3c-66c6b137fb27/image.png',
     hoverBorder: 'hover:border-primary/50',
     hoverBg: 'hover:bg-primary hover:text-on-primary',
     bgOverlay: 'bg-primary/5',
-    link: 'https://www.credly.com/'
+    link: 'https://www.credly.com/earner/earned/share/52d47dbd-9c65-4288-a49c-a8c1fb2efd83'
   },
   {
     id: 'alibaba',
@@ -73,11 +73,11 @@ const certsData = [
     title: 'MTCNA',
     subtitle: 'MikroTik Certified Network Associate',
     category: 'Network',
-    imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/0/00/MikroTik_logo.svg',
+    imgSrc: 'https://raw.githubusercontent.com/bayhaqqyy/bayhaqqyy.github.io/main/assets/images/13.png',
     hoverBorder: 'hover:border-cyan-400/50',
     hoverBg: 'hover:bg-cyan-400 hover:text-slate-950',
     bgOverlay: 'bg-cyan-400/5',
-    link: 'https://mikrotik.com/training/'
+    link: 'https://mikrotik.com/training/certificates/c331463c535cc54134bd'
   }
 ];
 
