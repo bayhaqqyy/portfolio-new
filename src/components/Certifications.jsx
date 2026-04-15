@@ -17,7 +17,7 @@ const certsData = [
     id: 'rhcoa',
     title: 'RHCOA',
     subtitle: 'Red Hat Certified OpenShift Administrator',
-    category: 'Cloud', 'Linux', 
+    category: ['Cloud', 'Linux'],
     imgSrc: 'https://images.credly.com/size/680x680/images/b6cf67d4-0533-495b-acfe-9d08bb50bef1/image.png',
     hoverBorder: 'hover:border-secondary/50',
     hoverBg: 'hover:bg-secondary hover:text-on-secondary',
@@ -74,7 +74,12 @@ const Certifications = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const categories = ['All', 'Cloud', 'Linux', 'Network'];
 
-  const filteredCerts = certsData.filter(cert => activeFilter === 'All' || cert.category === activeFilter);
+  const filteredCerts = certsData.filter(cert => {
+    if (activeFilter === 'All') return true;
+    return Array.isArray(cert.category)
+      ? cert.category.includes(activeFilter)
+      : cert.category === activeFilter;
+  });
 
   return (
     <section className="py-24 px-4 sm:px-8 max-w-7xl mx-auto" id="certs">
