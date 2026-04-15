@@ -29,11 +29,11 @@ const certsData = [
     title: 'MTCRE',
     subtitle: 'MikroTik Certified Routing Engineer',
     category: 'Network',
-    imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/0/00/MikroTik_logo.svg',
+    imgSrc: 'https://raw.githubusercontent.com/bayhaqqyy/bayhaqqyy.github.io/main/assets/images/14.png',
     hoverBorder: 'hover:border-cyan-400/50',
     hoverBg: 'hover:bg-cyan-400 hover:text-slate-950',
     bgOverlay: 'bg-cyan-400/5',
-    link: 'https://mikrotik.com/training/'
+    link: 'https://mikrotik.com/training/certificates/c357779c8d350cdb33ed'
   },
   {
     id: 'rhcsa',
@@ -88,18 +88,18 @@ const Certifications = () => {
   const filteredCerts = certsData.filter(cert => activeFilter === 'All' || cert.category === activeFilter);
 
   return (
-    <section className="py-24 px-8 max-w-7xl mx-auto" id="certs">
-      <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+    <section className="py-24 px-4 sm:px-8 max-w-7xl mx-auto" id="certs">
+      <div className="flex flex-col md:flex-row justify-between items-stretch md:items-end mb-12 gap-6">
         <div>
           <h2 className="font-headline text-4xl font-black mb-4">Professional Certifications</h2>
           <p className="font-label text-slate-400">Validated industry expertise and proficiency</p>
         </div>
-        <div className="flex gap-2 bg-surface-container-low p-1 rounded-xl border border-outline-variant/20">
+        <div className="flex gap-2 overflow-x-auto bg-surface-container-low p-1 rounded-xl border border-outline-variant/20">
           {categories.map(cat => (
             <button 
               key={cat}
               onClick={() => setActiveFilter(cat)}
-              className={`px-4 py-2 rounded-lg font-label text-xs font-bold transition-all ${
+              className={`flex-shrink-0 px-4 py-2 rounded-lg font-label text-xs font-bold transition-all ${
                 activeFilter === cat 
                   ? 'bg-primary-container text-on-primary-container' 
                   : 'text-on-surface-variant hover:text-on-surface'

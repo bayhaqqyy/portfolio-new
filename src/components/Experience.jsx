@@ -57,15 +57,15 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="py-24 px-8 max-w-4xl mx-auto" id="experience">
+    <section className="py-24 px-4 sm:px-8 max-w-4xl mx-auto" id="experience">
       <div className="text-center mb-16">
-        <h2 className="font-headline text-4xl font-black mb-4">Professional Experience</h2>
+        <h2 className="font-headline text-3xl sm:text-4xl font-black mb-4">Professional Experience</h2>
         <p className="font-label text-slate-400">Jejak karir dan pengalaman di bidang infrastruktur</p>
       </div>
-      <div className="relative border-l border-outline-variant/30 pl-8 ml-4">
+      <div className="relative border-l border-outline-variant/30 pl-6 sm:pl-8 ml-2 sm:ml-4">
         {experiences.map((exp) => (
           <div key={exp.id} className="mb-12 relative group">
-            <div className="absolute -left-[41px] top-1">
+            <div className="absolute -left-[33px] sm:-left-[41px] top-1">
               {exp.current && (
                 <div className="w-5 h-5 rounded-full bg-cyan-400 animate-ping opacity-20 absolute"></div>
               )}
