@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#certs', label: 'Certifications' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#contact', label: 'Contact' }
+  { href: '/#about', label: 'About' },
+  { href: '/#skills', label: 'Skills' },
+  { href: '/#certs', label: 'Certifications' },
+  { href: '/#experience', label: 'Experience' },
+  { href: '/#contact', label: 'Contact' },
+  { href: '/blog', label: 'Blog', isRoute: true }
 ];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -27,11 +29,16 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-white/5">
       <div className="flex justify-between items-center px-4 sm:px-8 py-4 max-w-7xl mx-auto">
-        <a href="#top" onClick={closeMenu} className="text-xl font-black tracking-tighter text-cyan-400 font-headline">Hello World</a>
+        <Link to="/" onClick={closeMenu} className="text-xl font-black tracking-tighter text-cyan-400 font-headline">Hello World</Link>
         <div className="hidden md:flex gap-8 items-center">
-          {navLinks.map((link) => (
-            <a key={link.href} className="text-slate-400 font-medium hover:text-cyan-300 transition-colors duration-300 font-label text-sm uppercase tracking-wider" href={link.href}>{link.label}</a>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = link.isRoute && location.pathname.startsWith(link.href);
+            return link.isRoute ? (
+              <Link key={link.href} className={`font-medium transition-colors duration-300 font-label text-sm uppercase tracking-wider ${isActive ? 'text-cyan-400 font-bold' : 'text-slate-400 hover:text-cyan-300'}`} to={link.href}>{link.label}</Link>
+            ) : (
+              <a key={link.href} className="text-slate-400 font-medium hover:text-cyan-300 transition-colors duration-300 font-label text-sm uppercase tracking-wider" href={link.href}>{link.label}</a>
+            );
+          })}
           <a href="/resume.pdf" download="Resume_Rafli_Abdul_Bayhaqqy.pdf" className="bg-primary-container text-on-primary-container px-6 py-2 rounded-xl font-headline font-bold text-sm hover:scale-95 duration-200 ease-in-out transition-all flex items-center justify-center">Resume</a>
         </div>
         <button
@@ -52,16 +59,28 @@ const Navbar = () => {
         }`}
       >
         <div className="px-4 pb-5 pt-2 space-y-2">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={closeMenu}
-              className="block rounded-lg px-4 py-3 text-slate-200 font-label text-sm uppercase tracking-wider hover:bg-surface-container-high active:bg-surface-container-highest transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = link.isRoute && location.pathname.startsWith(link.href);
+            return link.isRoute ? (
+              <Link
+                key={link.href}
+                to={link.href}
+                onClick={closeMenu}
+                className={`block rounded-lg px-4 py-3 font-label text-sm uppercase tracking-wider hover:bg-surface-container-high transition-colors ${isActive ? 'text-cyan-400 bg-surface-container font-bold' : 'text-slate-200 active:bg-surface-container-highest'}`}
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={closeMenu}
+                className="block rounded-lg px-4 py-3 text-slate-200 font-label text-sm uppercase tracking-wider hover:bg-surface-container-high active:bg-surface-container-highest transition-colors"
+              >
+                {link.label}
+              </a>
+            );
+          })}
           <a
             href="/resume.pdf"
             download="Resume_Rafli_Abdul_Bayhaqqy.pdf"

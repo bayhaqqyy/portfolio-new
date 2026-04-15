@@ -15,9 +15,9 @@ const certsData = [
   },
   {
     id: 'rhcoa',
-    title: 'RHCOA',
+    title: 'RHCOA','Cloud'
     subtitle: 'Red Hat Certified OpenShift Administrator',
-    category: 'Cloud',
+    category: 'Linux',
     imgSrc: 'https://images.credly.com/size/680x680/images/b6cf67d4-0533-495b-acfe-9d08bb50bef1/image.png',
     hoverBorder: 'hover:border-secondary/50',
     hoverBg: 'hover:bg-secondary hover:text-on-secondary',
@@ -47,7 +47,7 @@ const certsData = [
     link: 'https://www.credly.com/earner/earned/badge/0632e780-f927-4933-b934-68df93a83ed5'
   },
   {
-    id: 'rhcsa',
+    id: 'rhcsc',
     title: 'RHCSC',
     subtitle: 'Red Hat Certified Specialist in Containers',
     category: 'Linux',
@@ -56,17 +56,6 @@ const certsData = [
     hoverBg: 'hover:bg-primary hover:text-on-primary',
     bgOverlay: 'bg-primary/5',
     link: 'https://www.credly.com/earner/earned/share/52d47dbd-9c65-4288-a49c-a8c1fb2efd83'
-  },
-  {
-    id: 'alibaba',
-    title: 'ACA',
-    subtitle: 'Alibaba Cloud Certified Associate Database',
-    category: 'Cloud',
-    imgSrc: 'https://images.credly.com/size/340x340/images/6b0485d5-fcdd-4bed-aec9-ca4e78263bd3/ACA-_Cloud_Computing_Certification.png',
-    hoverBorder: 'hover:border-secondary/50',
-    hoverBg: 'hover:bg-secondary hover:text-on-secondary',
-    bgOverlay: 'bg-secondary/5',
-    link: 'https://www.alibabacloud.com/certification/'
   },
   {
     id: 'mtcna',
