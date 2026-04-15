@@ -15,7 +15,7 @@ const certsData = [
   },
   {
     id: 'rhcoa',
-    title: 'RHCOA','Cloud'
+    title: 'RHCOA','Cloud',
     subtitle: 'Red Hat Certified OpenShift Administrator',
     category: 'Linux',
     imgSrc: 'https://images.credly.com/size/680x680/images/b6cf67d4-0533-495b-acfe-9d08bb50bef1/image.png',
