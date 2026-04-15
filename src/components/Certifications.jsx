@@ -111,8 +111,8 @@ const Certifications = () => {
               transition={{ duration: 0.3 }}
               className={`bg-surface-container p-6 rounded-3xl border border-outline-variant/20 transition-all group ${cert.hoverBorder}`}
             >
-              <div className="h-40 mb-6 bg-slate-900 rounded-2xl flex items-center justify-center p-2 overflow-hidden relative">
-                <img alt={cert.title} className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500" src={cert.imgSrc} />
+              <div className="h-40 mb-6 bg-transparent rounded-2xl flex items-center justify-center p-2 overflow-hidden relative">
+                <img alt={cert.title} className={`w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 ${cert.id === 'rhcsa' ? 'mix-blend-screen' : ''}`} src={cert.imgSrc} />
                 <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity ${cert.bgOverlay}`}></div>
               </div>
               <h4 className="font-headline font-bold text-lg mb-1">{cert.title}</h4>
