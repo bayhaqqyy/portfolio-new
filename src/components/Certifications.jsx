@@ -7,22 +7,22 @@ const certsData = [
     title: 'RHCE',
     subtitle: 'Red Hat Certified Engineer',
     category: 'Linux',
-    imgSrc: 'https://images.credly.com/size/340x340/images/22b9fbd5-0bdc-44bf-a51c-c0c16922df67/Red_Hat_Certified_Engineer__RHCE_.png',
+    imgSrc: 'https://images.credly.com/size/680x680/images/19c4e804-54fe-4857-b022-7cfd5520596c/image.png',
     hoverBorder: 'hover:border-primary/50',
     hoverBg: 'hover:bg-primary hover:text-on-primary',
     bgOverlay: 'bg-primary/5',
-    link: 'https://www.credly.com/'
+    link: 'https://www.credly.com/earner/earned/badge/f726c575-f2ac-400a-99f5-3fbedb3cb7a2'
   },
   {
     id: 'rhcoa',
     title: 'RHCOA',
     subtitle: 'Red Hat Certified OpenShift Administrator',
     category: 'Cloud',
-    imgSrc: 'https://images.credly.com/size/340x340/images/eb6903d2-a720-41da-abff-deeee1d5d109/Red_Hat_Certified_OpenShift_Administrator.png',
+    imgSrc: 'https://images.credly.com/size/680x680/images/b6cf67d4-0533-495b-acfe-9d08bb50bef1/image.png',
     hoverBorder: 'hover:border-secondary/50',
     hoverBg: 'hover:bg-secondary hover:text-on-secondary',
     bgOverlay: 'bg-secondary/5',
-    link: 'https://www.credly.com/'
+    link: 'https://www.credly.com/earner/earned/badge/cec6d468-e0e8-4c6a-b1ff-5366b8684408'
   },
   {
     id: 'mtcre',
@@ -44,7 +44,7 @@ const certsData = [
     hoverBorder: 'hover:border-primary/50',
     hoverBg: 'hover:bg-primary hover:text-on-primary',
     bgOverlay: 'bg-primary/5',
-    link: 'https://www.credly.com/'
+    link: 'https://www.credly.com/earner/earned/badge/0632e780-f927-4933-b934-68df93a83ed5'
   },
   {
     id: 'alibaba',
