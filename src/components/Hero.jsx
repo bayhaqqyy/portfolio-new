@@ -44,7 +44,7 @@ const Hero = () => {
           <img 
             alt="Rafli Abdul Bay Haqqy" 
             className="w-full h-full object-cover rounded-full bg-surface" 
-            src="/my-avatar.jpg" 
+            src="/my-avatar.png" 
           />
         </div>
       </motion.div>
